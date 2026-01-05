@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<title>AYAJON ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.heart {
+    font-size: 420px; /* SAL KICHRAYTIRILDI */
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.heart:active {
+    transform: scale(1.15);
+}
+
+.text {
+    display: none;
+    margin-top: 20px;
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.text img {
+    width: 420px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 12px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="heart" onclick="showHide()">❤️</div>
+
+    <div class="text" id="ona">
+          AYAJON
+        <img src="photo_2025-12-31_16-25-22.jpg" alt="AYAJON">
+      
+    </div>
+</div>
+
+<script>
+function showHide() {
+    const ona = document.getElementById("ona");
+    ona.style.display = (ona.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
